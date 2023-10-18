@@ -35,7 +35,7 @@ class TestFlaskWebsite:
         driver.find_element(By.NAME, 'password').send_keys(errPassword)
         driver.find_element(By.XPATH, "//button[text()='登录']").click()
 
-        assert driver.find_element(By.TAG_NAME,'h4').text=='用户名或密码错误'
+        assert driver.find_element(By.TAG_NAME,'h4').text=='用户名或密码错误。'
 
         driver.quit()
 
